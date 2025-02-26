@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.gnomemobileaddons" path="/org/gnome/shell/extensions/gnomemobileaddons/">
+    <key name="dash-enabled" type="b">
+      <default>true</default>
+      <summary>Enable Dash Height Adjustment</summary>
+      <description>
+        If enabled, dash height is adjusted with spacing. If disabled, dash height is ignored.
+      </description>
+    </key>
+  </schema>
+</schemalist>
