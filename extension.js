@@ -1,6 +1,4 @@
-const Gio = imports.gi.Gio;
-const GLib = imports.gi.GLib;
-const St = imports.gi.St;
+const { Gio, GLib, St } = imports.gi;
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 
