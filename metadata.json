@@ -3,6 +3,7 @@
   "description": "Gnome Mobile Addons",
   "uuid": "gnome-mobile-addons@alghiffaryfa.id",
   "session-modes": ["user", "unlock-dialog"],
+  "settings-schema": "org.gnome.shell.extensions.gnomemobileaddons",
   "shell-version": [
     "45",
     "46",
