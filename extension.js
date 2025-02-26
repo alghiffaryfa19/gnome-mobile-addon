@@ -1,13 +1,15 @@
-const { Gio, GLib, St } = imports.gi;
+const Gio = imports.gi.Gio;
+const GLib = imports.gi.GLib;
+const St = imports.gi.St;
 const Main = imports.ui.main;
 const ExtensionUtils = imports.misc.extensionUtils;
 
 let settings;
 
 function _patchOverviewControls() {
-    const overviewControls = Main.overview._overview.controls;
+    let overviewControls = Main.overview._overview.controls;
 
-    // Simpan fungsi asli
+    // Simpan fungsi asli hanya jika belum ada
     if (!overviewControls._originalComputeWorkspacesBox) {
         overviewControls._originalComputeWorkspacesBox = overviewControls._computeWorkspacesBoxForState;
     }
@@ -46,7 +48,7 @@ function _patchOverviewControls() {
 }
 
 function _restoreOverviewControls() {
-    const overviewControls = Main.overview._overview.controls;
+    let overviewControls = Main.overview._overview.controls;
     if (overviewControls._originalComputeWorkspacesBox) {
         overviewControls._computeWorkspacesBoxForState = overviewControls._originalComputeWorkspacesBox;
         delete overviewControls._originalComputeWorkspacesBox;
