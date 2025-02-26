@@ -1,5 +1,6 @@
+import * as Main from "resource:///org/gnome/shell/ui/overviewControls.js";
+
 const { GObject, St, Clutter } = imports.gi;
-const Main = imports.ui.main;
 const { Extension } = imports.misc.extensionUtils;
 const Me = imports.misc.extensionUtils.getCurrentExtension();
 const Gio = imports.gi.Gio;
