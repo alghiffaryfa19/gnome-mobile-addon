@@ -1,12 +1,9 @@
 {
-  "name": "Gnome Mobile Addons",
-  "description": "Gnome Mobile Addons",
-  "uuid": "gnome-mobile-addons@alghiffaryfa.id",
-  "session-modes": ["user", "unlock-dialog"],
-  "settings-schema": "org.gnome.shell.extensions.gnomemobileaddons",
-  "shell-version": [
-    "45",
-    "46",
-    "46-mobile.1"
-  ]
+    "uuid": "gnome-mobile-addons@alghiffaryfa.id",
+    "name": "Gnome Mobile Addons",
+    "description": "Ekstensi untuk mengubah Overview Controls.",
+    "version": 1,
+    "shell-version": ["45", "44", "43", "46", "46-mobile.1"],
+    "url": "https://github.com/alghiffaryfa19/gnome-mobile-addon",
+    "settings-schema": "org.gnome.shell.extensions.gnomemobileaddons"
 }
